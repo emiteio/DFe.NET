@@ -1370,7 +1370,7 @@ namespace NFe.Utils.Enderecos
                     #region NFe
 
                     //Rev: 09/09/2015
-                    if (estado != Estado.BA & estado != Estado.MA & estado != Estado.PA & estado != Estado.PE) //Esses estados usam SVRS somente para NFCe, possuindo endereços próprios para NFe.
+                    if (estado != Estado.BA & estado != Estado.MA & estado != Estado.PE) //Esses estados usam SVRS somente para NFCe, possuindo endereços próprios para NFe.
                     {
                         if (emissao != TipoEmissao.teEPEC)
                             addServico(eventoCceCanc, versao1, prod, emissao, estado, nfe, "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento.asmx");
